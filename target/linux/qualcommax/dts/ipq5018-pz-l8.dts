@@ -385,3 +385,7 @@
 
 	status = "disabled";
 };
+&wifi2 {
+	// QCN6102 5G
+	status = "disabled";
+};

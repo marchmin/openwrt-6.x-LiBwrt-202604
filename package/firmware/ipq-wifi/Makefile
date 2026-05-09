@@ -36,6 +36,7 @@ ALLWIFIBOARDS:= \
 	buffalo_wxr-5950ax12 \
 	cambiumnetworks_xe34 \
 	cmcc_mr3000d-ci \
+	cmcc_mr3000d-04 \
 	cmcc_rm2-6 \
 	compex_wpq873 \
 	dynalink_dl-wrx36 \

@@ -13,6 +13,12 @@ PKG_FLAGS:=nonshared
 
 include $(INCLUDE_DIR)/package.mk
 
+define Build/Prepare
+	$(call Build/Prepare/Default)
+	# Inject local board-2.bin overrides when present
+	[ -d $(CURDIR)/src ] && cp -f $(CURDIR)/src/board-* $(PKG_BUILD_DIR)/ || true
+endef
+
 define Build/Compile
 endef
 

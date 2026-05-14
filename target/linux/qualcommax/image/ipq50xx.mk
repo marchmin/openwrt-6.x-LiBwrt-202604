@@ -47,7 +47,7 @@ define Device/cmcc_mr3000d-04
 	IMAGE_SIZE := 59392k
 	NAND_SIZE := 128m
 	DEVICE_PACKAGES := ath11k-firmware-ipq5018-qcn6122 \
-		ipq-wifi-cmcc_mr3000d-ci
+		ipq-wifi-cmcc_mr3000d-04
 endef
 TARGET_DEVICES += cmcc_mr3000d-04
 

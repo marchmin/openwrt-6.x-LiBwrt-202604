@@ -415,7 +415,7 @@
 		/*     UPD ID:	*/	2
 		/* reset GPIO:	*/	15
 		/*   reserved:	*/	0 0>;
-};
+
 
 	status = "okay";
 

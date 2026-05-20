@@ -407,15 +407,11 @@
 			"ath11k/QCN6122/hw1.0/m3_fw.mdt";
 
 	qcom,bootargs_smem = <507>;
-	/* The QCN6102 radio should map to UPD ID 2. Without       */
-	/* bootargs, the firmware will expect it to be on UPD ID 3 */
-	boot-args = <
-		/*       type:	*/	0x2	/* PCIE0	*/
-		/*     length:	*/	4
-		/*     UPD ID:	*/	2
-		/* reset GPIO:	*/	15
-		/*   reserved:	*/	0 0>;
-
+	boot-args = </*       type: */ 0x2 /* PCIE1 */
+		     /*     length: */ 4
+		     /*      PD id: */ 2
+		     /* reset GPIO: */ 27
+		     /*   reserved: */ 0 0>;
 
 	status = "okay";
 
@@ -494,7 +490,6 @@
 		// m3_firmware = "ath11k/QCN6122/hw1.0/m3_fw.mdt";
 	};
 };
-
 &wifi {
 	// IPQ5000
 	qcom,rproc = <&q6_wcss_pd1>;
